@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../style.css";
+import { useNavigate } from "react-router-dom";
 import img1 from "../images/eslam.png";
-
 import {
   AppBar,
   Toolbar,
@@ -47,18 +47,22 @@ const listItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    link: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    link: "/",
   },
   {
     listIcon: <Apps />,
     listText: "Portfolio",
+    link: "/profile",
   },
   {
     listIcon: <ContactMail />,
     listText: "Contacts",
+    link: "/",
   },
 ];
 
@@ -69,6 +73,7 @@ export default function Navbar() {
   const toggleSlider = () => {
     setOpen(!open);
   };
+  const navigate = useNavigate();
 
   const sideList = () => (
     <Box
@@ -90,7 +95,14 @@ export default function Navbar() {
       <Divider />
       <List>
         {listItems.map((listItem, index) => (
-          <ListItem className={classes.listItem} button key={index}>
+          <ListItem
+            className={classes.listItem}
+            button
+            key={index}
+            onClick={() => {
+              navigate(`${listItem.link}`);
+            }}
+          >
             <ListItemIcon className={classes.listItem}>
               {listItem.listIcon}
             </ListItemIcon>
