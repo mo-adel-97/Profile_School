@@ -3,6 +3,7 @@ import "../Cssfiels/Content.css";
 import img from "../images/PNG.png";
 import Stack from "@mui/material/Stack";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Header";
 import Button from "@mui/material/Button";
 // import Typing from "react-typing-animation";
 import Typed from "react-typed";
@@ -11,7 +12,7 @@ function Content() {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="container">
+      <div className="containerr">
         <div className="box">
           <div className="divforimage">
             <img
@@ -49,15 +50,15 @@ function Content() {
                 style={{ color: "#72b626" }}
                 strings={[
                   "Geographer",
-                  "Geology Teacher",
-                  "Pharaonic Researcher",
+                  "Geological Researcher",
+                  "Egyptologist",
                 ]}
                 typeSpeed={150}
                 backSpeed={100}
                 loop
               />
             </h1>
-            <div className="containerr">
+            <div>
               <p className="typed-out" style={{ fontSize: "20px" }}>
                 A Geology Teacher making unique web apps and designs I strives
                 to build immersive and beautiful web applications through

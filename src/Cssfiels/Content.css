@@ -18,7 +18,7 @@
     letter-spacing: 1px;
     word-spacing: 2px;
   }
-  .container {
+  .containerr {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
       url(../images/image4.jpg);
     height: 91.7vh;
@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 600px) {
-  .container {
+  .containerr {
     flex-direction: column;
     height: 900px;
   }

@@ -51,8 +51,8 @@ const listItems = [
   },
   {
     listIcon: <AssignmentInd />,
-    listText: "Resume",
-    link: "/",
+    listText: "Activites",
+    link: "/Activites",
   },
   {
     listIcon: <Apps />,
@@ -61,8 +61,8 @@ const listItems = [
   },
   {
     listIcon: <ContactMail />,
-    listText: "Contacts",
-    link: "/",
+    listText: "Login",
+    link: "/Login",
   },
 ];
 
